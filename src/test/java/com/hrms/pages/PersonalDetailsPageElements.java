@@ -11,7 +11,7 @@ public class PersonalDetailsPageElements extends BaseClass {
 	@FindBy(xpath = "//div[@class = 'imageHolder']/preceding-sibling::h1")
 	public WebElement profileName;
 	
-	@FindBy(xpath = "//a[text() = 'Contact Details']")
+	@FindBy(linkText =  "Contact Details")
 	public WebElement empContactDetails;
 	
 	@FindBy(id = "btnSave")
@@ -23,7 +23,7 @@ public class PersonalDetailsPageElements extends BaseClass {
 	@FindBy(id = "contact_city")
 	public WebElement empCity;
 	
-	@FindBy(id = "contact_province")
+	@FindBy(id = "contact_state")
 	public WebElement empState;
 	
 	@FindBy(id = "contact_emp_zipcode")
